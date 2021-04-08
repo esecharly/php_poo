@@ -14,11 +14,11 @@
         }
     }
 
-    $obj = new conectar();
+    /* $obj = new conectar();
 
-    if ($obj->conexion) {
+    if ($obj->conexion()) {
         echo "conectado con exito";
     }else{
         echo "fallo al conectar";
-    }
+    } */
 ?>
