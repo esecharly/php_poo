@@ -30,6 +30,7 @@
             <td>Nombre</td>
             <td>Apellido</td>
             <td>Actualizar</td>
+            <td>Eliminar</td>
         </tr>
         <?php
             $obj = new metodos();
@@ -43,8 +44,14 @@
         <tr>
             <td><?php echo $key['nombre'] ?></td>
             <td><?php echo $key['apellido'] ?></td>
-            <td><a href="editar.php?id=<?php echo $key['id']?>">
-                Editar
+            <td>
+                <a href="editar.php?id=<?php echo $key['id']?>">
+                    Editar
+                </a>
+            </td>
+            <td>
+                <a href="procesos/eliminar.php?id=<?php echo $key['id']?>">
+                    Eliminar
                 </a>
             </td>
         </tr>

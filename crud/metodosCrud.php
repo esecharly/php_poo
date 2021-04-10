@@ -28,5 +28,13 @@
 
             return $result=mysqli_query($conexion, $sql);
         }
+
+        public function eliminarDatosNombre($id){
+            $c = new conectar();
+            $conexion = $c->conexion();
+
+            $sql="DELETE FROM t_persona WHERE id='$id'";
+            return $result=mysqli_query($conexion, $sql);
+        }
     }
 ?>
