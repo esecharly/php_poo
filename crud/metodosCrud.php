@@ -8,5 +8,14 @@
 
             return mysqli_fetch_all($result, MYSQLI_ASSOC);
         }
+
+        public function insertarDatosNombre($datos){
+            $c = new conectar();
+            $conexion = $c->conexion();
+
+            $sql="INSERT INTO t_persona (nombre, apellido)
+                                        VALUES ('$datos[0]', '$datos[1]')";
+            return $result=mysqli_query($conexion, $sql);
+        }
     }
 ?>

@@ -12,6 +12,19 @@
     <title>crud</title>
 </head>
 <body>
+    <form action="procesos/insertar.php" method="POST">
+        <label for="">Nombre</label>
+        <p></p>
+        <input type="text" name="txtNombre">
+        <p></p>
+        <label for="">Apellido</label>
+        <p></p>
+        <input type="text" name="txtApellido">
+        <p></p>
+        <button>Agregar</button>
+    </form>
+    <br>
+    <br>
     <table style="border-collapse: collapse;" border="1">
         <tr>
             <td>Nombre</td>
