@@ -17,5 +17,16 @@
                                         VALUES ('$datos[0]', '$datos[1]')";
             return $result=mysqli_query($conexion, $sql);
         }
+
+        public function actualizaDatosNombre($datos){
+            $c = new conectar();
+            $conexion = $c->conexion();
+
+            $sql="UPDATE t_persona SET nombre='$datos[0]',
+                                        apellido='$datos[1]'
+                                    WHERE id='$datos[2]'";
+
+            return $result=mysqli_query($conexion, $sql);
+        }
     }
 ?>
